@@ -54,8 +54,8 @@ class login {
 
     setActionHtml(){
         if(this.verificacionUser()==true){
-            labelEmail.innerHTML=`<p  style='color:green;'> <b> email verificado exitosamente</p></b>`
-            labelPassword.innerHTML=` <b>  <p  style='color:green;'>password verificada exitosamente</p> </b> `
+            labelEmail.innerHTML=` <b><p style='color:green;'>  email verificado exitosamente</p></b>`
+            labelPassword.innerHTML=` <b><p  style='color:green;'>password verificada exitosamente</p></b> `
 
             setTimeout(function(){
                 window.open('home.html');
@@ -65,16 +65,11 @@ class login {
         }else{
             labelEmail.innerHTML=`<p  style='color:red;'>email de usuario invalido</p>`
             labelPassword.innerHTML=`<p  style='color:red;'>password incorrecta</p>`
-        }
+         }
     }
-
 }
 
-
-
-
 const objectClass = new login(email,pass);
-
 
 
 const eventClickBtnSubmit = btnSubmit.addEventListener('click',()=>{
